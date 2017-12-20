@@ -20,8 +20,17 @@ class HomeComponent extends Component {
     render() {
         return (
             <div className='test001'>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <img src={logo} className="App-logo2" alt="logo"/><br/>
-                <RaisedButton backgroundColor={'yellow'} label={'고경준천재님'}/>
+                <RaisedButton primary={true} backgroundColor={'yellow'} label={'고경준천재님'}/>
+                <br/>
+                <RaisedButton secondary={true} backgroundColor={'yellow'} label={'고경준천재님'}/>
+                <br/>
+                <br/>
+                <RaisedButton  backgroundColor={'yellow'} label={'고경준천재님'}/>
 
             </div>
         );

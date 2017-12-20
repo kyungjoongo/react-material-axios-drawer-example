@@ -47,7 +47,7 @@ class Component1 extends Component {
 
             setTimeout(() => {
                 this.setState({loading: false});
-            }, 1000);
+            }, 1500);
 
             console.log("aslfksdlkflskdf--->" + JSON.stringify(this.state.proverbList));
 
@@ -55,8 +55,6 @@ class Component1 extends Component {
     }
 
     componentDidMount() {
-        this.getReddit();
-
         this.getProverb();
     }
 
@@ -64,19 +62,22 @@ class Component1 extends Component {
         alert(content);
     }
 
-
-
     render() {
         return (
+
             <div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
                 <RaisedButton label='퐁듀' onClick={() => this.clickedProverb('sdkflskdf')} backgroundColor={'red'}
                               labelColor={'white'}/>{' '}
                 <RaisedButton label='고경준천재' onClick={() => this.clickedProverb('sdlfksdlkfsldkf2222')}
                               backgroundColor={'green'} labelColor={'white'}/>
-                {this.state.loading ? <CircularProgress color={'red'} size={100} className='loader'/> : null}
 
                 <div>
+
                     <ul>
                         {this.state.proverbList.map(proverbOne =>
                             <li onClick={() => this.clickedProverb(proverbOne.content)}> {proverbOne.content}</li>
@@ -84,6 +85,10 @@ class Component1 extends Component {
                     </ul>
                 </div>
 
+
+                <div className='loader'>
+                    {this.state.loading ? <CircularProgress color={'green'} size={50}  /> : null}
+                </div>
             </div>
         );
     }
