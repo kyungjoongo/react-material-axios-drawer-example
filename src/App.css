@@ -1,0 +1,88 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40px;
+}
+
+.App-logo2 {
+    animation: App-logo-spin infinite 20s linear;
+    height: 150px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: fixed;
+    left: 10%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+
+}
+
+div.appBar{
+    color: black!important;
+    background-color: coral!important;
+}
+
+div a.link:visited{
+    text-decoration: none!important;
+}
+div a.link{
+    text-decoration: none!important;
+    color: black;
+    text-align: center;
+}
+
+
+div a .link:hover{
+    text-decoration: none!important;
+}
+
+.test001{
+    text-align: center;
+}
+
+/*
+
+CircleLoader {
+    background-color: black;
+    position: fixed !important;
+    left: 100px !important;
+    top: 200px !important;
+
+}
+
+.css-hzw9k3, .css-jxiqlq {
+    position: fixed;
+    left: 50%;
+    top: 210px;
+    transform: translate(-50%, -50%);
+}
+*/
