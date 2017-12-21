@@ -3,17 +3,25 @@ import './App.css';
 import {BrowserRouter as Router, Link, Route,} from 'react-router-dom';
 import Component1 from "./Components/Component1";
 import Component2 from "./Components/Component2";
-import {RaisedButton, CircularProgress, AppBar, Drawer, MenuItem} from 'material-ui'
+import {AppBar, Drawer, MenuItem} from 'material-ui'
 import HomeComponent from "./Components/HomeComponent";
-import FontIcon from 'material-ui/FontIcon';
-import {blue500, red500, greenA200} from 'material-ui/styles/colors';
 import CardExampleWithAvatar from "./Components/CardExampleWithAvatar";
+import MovieComponent from "./Components/MovieComponent";
 
 const iconStyles = {
     marginRight: 5,
     marginTop: 5
 
 };
+
+/*const data = {
+    type : 'MOVIE_List',
+    payload : [
+        {id : '1', name : 'pulp fiction'}
+    ]
+}*/
+
+
 
 
 class App extends Component {
@@ -62,7 +70,10 @@ class App extends Component {
                         <MenuItem onClick={()=>this.handleClose('Component1')}><Link className='link' to={"/Component1"}>Component1</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('Component2')}><Link className='link' to={"/Component2"}>Component2</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('CardExample')}><Link className='link' to={"/CardExampleWithAvatar"}>CardExampleWithAvatar</Link></MenuItem>
+                        <MenuItem onClick={()=>this.handleClose('Movie')}><Link className='link' to={"/MovieComponent"}>MovieComponent</Link></MenuItem>
                     </Drawer>
+
+
 
                     {/*<FontIcon className="material-icons" style={iconStyles}>home</FontIcon>*/}
                     {/*#################################################*/}
@@ -73,6 +84,7 @@ class App extends Component {
                         <Route path="/Component1" component={Component1}/>
                         <Route path="/Component2" component={Component2}/>
                         <Route path="/CardExampleWithAvatar" component={CardExampleWithAvatar}/>
+                        <Route path="/MovieComponent" component={MovieComponent}/>
                     </div>
                 </div>
             </Router>

@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle} from 'material-ui/Card';
 import axios from "axios/index";
 import InfiniteScroll from 'react-infinite-scroller';
-import {RaisedButton, CircularProgress, AppBar, Drawer, MenuItem} from 'material-ui'
+import {CircularProgress, RaisedButton} from 'material-ui'
 import '../App.css';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
 import ScrollUpButton from "react-scroll-up-button";
-import MoveTo from 'material-ui/svg-icons/content/move-to-inbox';
 
 var FontAwesome = require('react-fontawesome');
 

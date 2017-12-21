@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
-import logo from './../logo.svg'
 import axios from 'axios'
-import {RingLoader, CircleLoader, PacmanLoader, ClimbingBoxLoader} from 'react-spinners';
-import {RaisedButton, CircularProgress, AppBar, Drawer, MenuItem} from 'material-ui'
-import {BrowserRouter as Router, Link, Route,} from 'react-router-dom';
+import {CircularProgress, RaisedButton} from 'material-ui'
 
 
 class Component1 extends Component {
