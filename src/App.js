@@ -14,14 +14,6 @@ const iconStyles = {
 
 };
 
-/*const data = {
-    type : 'MOVIE_List',
-    payload : [
-        {id : '1', name : 'pulp fiction'}
-    ]
-}*/
-
-
 
 
 class App extends Component {
@@ -80,7 +72,7 @@ class App extends Component {
                     {/*#################라우터 정의#####################*/}
                     {/*#################################################*/}
                     <div className='RouteOutlet'>
-                        <Route exact path="/" component={HomeComponent}/>
+                        <Route exact path="/" component={CardExampleWithAvatar}/>
                         <Route path="/Component1" component={Component1}/>
                         <Route path="/Component2" component={Component2}/>
                         <Route path="/CardExampleWithAvatar" component={CardExampleWithAvatar}/>

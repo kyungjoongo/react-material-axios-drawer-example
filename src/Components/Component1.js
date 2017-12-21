@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
 import '../App.css';
 import axios from 'axios'
-import {CircularProgress, RaisedButton} from 'material-ui'
+import {
+    CircularProgress,
+    RaisedButton,
+    Table,
+    TableBody,
+    TableHeader,
+    TableHeaderColumn,
+    TableRow,
+    TableRowColumn,
+} from 'material-ui'
 
 
 class Component1 extends Component {
@@ -12,8 +21,8 @@ class Component1 extends Component {
             posts: [],
             proverbList: [],
             loading: false,
-            title : '고경준 천재',
-            open : false
+            title: '고경준 천재',
+            open: false
         }
     }
 
@@ -74,17 +83,18 @@ class Component1 extends Component {
                               backgroundColor={'green'} labelColor={'white'}/>
 
                 <div>
-
                     <ul>
                         {this.state.proverbList.map(proverbOne =>
                             <li onClick={() => this.clickedProverb(proverbOne.content)}> {proverbOne.content}</li>
                         )}
                     </ul>
+
+
                 </div>
 
 
                 <div className='loader'>
-                    {this.state.loading ? <CircularProgress color={'green'} size={50}  /> : null}
+                    {this.state.loading ? <CircularProgress color={'green'} size={50}/> : null}
                 </div>
             </div>
         );
